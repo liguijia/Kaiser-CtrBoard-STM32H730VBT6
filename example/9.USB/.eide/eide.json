@@ -4,10 +4,10 @@
   "dependenceList": [],
   "srcDirs": [
     "Core",
+    "Middlewares",
     "Drivers",
-    "USER",
-    "USER/Src",
-    "USER/Inc"
+    "USB_DEVICE",
+    "USER"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",
@@ -25,7 +25,7 @@
       "excludeList": [],
       "toolchain": "GCC",
       "compileConfig": {
-        "cpuType": "Cortex-M7",
+        "cpuType": "Cortex-M3",
         "floatingPointHardware": "none",
         "scatterFilePath": "",
         "useCustomScatterFile": true,
@@ -56,15 +56,14 @@
           "Drivers/STM32H7xx_HAL_Driver/Inc/Legacy",
           "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
           "Drivers/CMSIS/Include",
-          "USER/Inc",
-          "USER/Src",
-          "USB_DEVICE",
           "USB_DEVICE/App",
           "USB_DEVICE/Target",
-          "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
           "Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
-          "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src",
-          "Middlewares/ST/STM32_USB_Device_Library/Core/Src"
+          "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+          "USB_DEVICE/App/Inc",
+          "USB_DEVICE/App/Src",
+          "USER/Inc",
+          "USER/Src"
         ],
         "libList": [],
         "defineList": [
@@ -124,8 +123,8 @@
         "bin": "",
         "baseAddr": "",
         "cpuInfo": {
-          "vendor": "null",
-          "cpuName": "null"
+          "vendor": "ST",
+          "cpuName": "STM32H730VB"
         },
         "proType": 1,
         "speed": 8000,
@@ -170,7 +169,11 @@
           "Drivers/STM32H7xx_HAL_Driver/Inc",
           "Drivers/STM32H7xx_HAL_Driver/Inc/Legacy",
           "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
-          "Drivers/CMSIS/Include"
+          "Drivers/CMSIS/Include",
+          "USB_DEVICE/App",
+          "USB_DEVICE/Target",
+          "Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+          "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
         ],
         "defineList": [
           "USE_HAL_DRIVER",
