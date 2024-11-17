@@ -25,6 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "BUZZER.h"
+#include "vofa.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -114,6 +115,7 @@ int main(void)
     while (1) {
         if (HAL_GPIO_ReadPin(KEY_GPIO_Port,KEY_Pin)){
             BUZZER_Stop();
+            vofa_start();
         }else{
            BUZZER_0N(114); 
         }
