@@ -82,5 +82,5 @@ extern char bmi088_accel_init(void);
 extern char bmi088_gyro_init(void);
 
 extern void BMI088_read(float gyro[3], float accel[3], float *temperate);
-extern void Temp_control(int32_t tmep);
+extern void Temp_control(float tmep);
 #endif

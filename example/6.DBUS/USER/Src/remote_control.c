@@ -37,14 +37,14 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef * huart, uint16_t Size)
 	{
 		if (Size <= BUFF_SIZE)
 		{
-			HAL_UARTEx_ReceiveToIdle_DMA(&huart4, rx_buff, 18); // ????????????
+			HAL_UARTEx_ReceiveToIdle_DMA(&huart4, rx_buff, 18); 
       __HAL_DMA_DISABLE_IT(huart4.hdmarx,DMA_IT_HT);
 			sbus_frame_parse(&remoter, rx_buff);
 			// memset(rx_buff, 0, BUFF_SIZE);
 		}
-		else  // ??????????????BUFF_SIZE????????
+		else  
 		{	
-			HAL_UARTEx_ReceiveToIdle_DMA(&huart4, rx_buff, 18); // ????????????
+			HAL_UARTEx_ReceiveToIdle_DMA(&huart4, rx_buff, 18); 
       __HAL_DMA_DISABLE_IT(huart4.hdmarx,DMA_IT_HT);
 			memset(rx_buff, 0, BUFF_SIZE);							   
 		}
@@ -55,8 +55,8 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef * huart)
 {
 	if(huart->Instance == UART4)
 	{
-		HAL_UARTEx_ReceiveToIdle_DMA(&huart4, rx_buff, 18); // ????????????????
+		HAL_UARTEx_ReceiveToIdle_DMA(&huart4, rx_buff, 18); 
       __HAL_DMA_DISABLE_IT(huart4.hdmarx,DMA_IT_HT);
-		memset(rx_buff, 0, BUFF_SIZE);							   // ??????????		
+		memset(rx_buff, 0, BUFF_SIZE);							   
 	}
 }

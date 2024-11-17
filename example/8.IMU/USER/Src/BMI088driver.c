@@ -1,39 +1,52 @@
+#include "main.h"
+#include "tim.h"
+
 #include "BMI088driver.h"
 #include "BMI088reg.h"
 #include "BMI088Middleware.h"
-#include "main.h"
-#include "tim.h"
-#define target_temp 40.0f
-#define TEMP_Pid_Kp 1400
+
+#include "pid.h"
+
+#define target_temp              40.0f
+#define TEMPERATURE_PID_KP       1600.0f // kp of temperature control PID
+#define TEMPERATURE_PID_KI       0.2f    // ki of temperature control PID
+#define TEMPERATURE_PID_KD       0.0f    // kd of temperature control PID
+
+#define TEMPERATURE_PID_MAX_OUT  1000.0f // max out of temperature control PID
+#define TEMPERATURE_PID_MAX_IOUT 900.0f  // max iout of temperature control PID
+
+// kp, ki,kd three params
+const float imu_temp_PID[3] = {TEMPERATURE_PID_KP, TEMPERATURE_PID_KI, TEMPERATURE_PID_KD};
+// pid struct
+pid_type_def imu_temp_pid;
 
 float BMI088_ACCEL_SEN = BMI088_ACCEL_3G_SEN;
 float BMI088_GYRO_SEN  = BMI088_GYRO_2000_SEN;
 
-int32_t clamp(int32_t temp, uint32_t M)
-{
-    if (temp > M) {
-        return M;
-    }
-    if (temp < 0) {
-        return 0;
-    }
-}
-
 void imu_pwm_set(uint16_t pwm)
 {
-    TIM8->CCR2 = 10000;
+    // __HAL_TIM_SET_COMPARE(&htim8, TIM_CHANNEL_2, pwm);
 }
-int32_t buf;
-void Temp_control(int32_t temp)
+
+float tempPWM0;
+uint16_t tempPWM;
+
+void Temp_control(float temp)
 {
 
-    buf = (target_temp - temp) * TEMP_Pid_Kp;
-    if (buf < 0) {
-        buf = 0;
-        
+    // pid calculate. PID����
+    PID_calc(&imu_temp_pid, temp, 40.0f);
+
+    tempPWM0 = imu_temp_pid.out;
+
+    if (imu_temp_pid.out < 0.0f) {
+        tempPWM0 = 0.0f;
+    } else if (imu_temp_pid.out > 1000.0f) {
+        tempPWM0 = 1000.0f;
     }
-    // buf = clamp(buf,4500.0f);
-    // imu_pwm_set(buf);
+
+    tempPWM = (uint16_t)tempPWM0;
+    imu_pwm_set(tempPWM);
 }
 
 #if defined(BMI088_USE_SPI)
@@ -118,7 +131,8 @@ uint8_t BMI088_init(void)
     // GPIO and SPI  Init .
     BMI088_GPIO_init();
     BMI088_com_init();
-
+    // HAL_TIMEx_PWMN_Start(&htim8, TIM_CHANNEL_2);
+    PID_init(&imu_temp_pid, PID_POSITION, imu_temp_PID, TEMPERATURE_PID_MAX_OUT, TEMPERATURE_PID_MAX_IOUT);
     error |= bmi088_accel_init();
     error |= bmi088_gyro_init();
 

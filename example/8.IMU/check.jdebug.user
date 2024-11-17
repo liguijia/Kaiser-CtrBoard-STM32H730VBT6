@@ -3,37 +3,41 @@
 GraphedExpression="gyro_data[1]", Color=#e56a6f
 GraphedExpression="gyro_data[2]", Color=#35792b
 GraphedExpression="gyro_data[0]", Color=#769dda
+OpenDocument="startup_stm32h730vbtx.s", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Core/Startup/startup_stm32h730vbtx.s", Line=46
+OpenDocument="main.c", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Core/Src/main.c", Line=55
 OpenDocument="stm32h7xx_hal_msp.c", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Core/Src/stm32h7xx_hal_msp.c", Line=0
-OpenDocument="stm32h7xx_hal.c", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c", Line=393
+OpenDocument="stm32h7xx_hal.c", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c", Line=317
 OpenDocument="BMI088driver.c", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/USER/Src/BMI088driver.c", Line=0
 OpenDocument="BMI088driver.h", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/USER/Inc/BMI088driver.h", Line=0
-OpenDocument="startup_stm32h730vbtx.s", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Core/Startup/startup_stm32h730vbtx.s", Line=38
-OpenDocument="main.c", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Core/Src/main.c", Line=48
+OpenDocument="spi.c", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Core/Src/spi.c", Line=74
+OpenDocument="stm32h7xx_it.c", FilePath="d:/Codes/GitHub/Kaiser-CtrBoard-STM32H730VBT6/example/8.IMU/Core/Src/stm32h7xx_it.c", Line=206
 OpenDocument="math.h", FilePath="c:/users/kaiser/.eide/tools/gcc_arm/arm-none-eabi/include/math.h", Line=0
 OpenDocument="_stdint.h", FilePath="c:/users/kaiser/.eide/tools/gcc_arm/arm-none-eabi/include/sys/_stdint.h", Line=0
 OpenToolbar="Debug", Floating=0, x=0, y=0
-OpenWindow="Registers 1", DockArea=LEFT, x=0, y=2, w=522, h=444, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
-OpenWindow="Source Files", DockArea=RIGHT, x=0, y=1, w=906, h=769, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Disassembly", DockArea=LEFT, x=0, y=1, w=522, h=322, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Global Data", DockArea=RIGHT, x=0, y=0, w=906, h=892, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=3, w=522, h=380, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Functions", DockArea=LEFT, x=0, y=0, w=522, h=513, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Data Sampling", DockArea=BOTTOM, x=2, y=0, w=1877, h=319, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
-OpenWindow="Timeline", DockArea=BOTTOM, x=1, y=0, w=1680, h=319, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=1, CodePaneShown=1, PinCursor="Cursor Movable", TimePerDiv="1 ns / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="1453;-137", DataGraphShowNamesAtCursor=0, PowerGraphDrawAsPoints=0, PowerGraphLegendShown=1, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="1462;-69", CodeGraphLegendShown=1, CodeGraphLegendPosition="1404;0"
-OpenWindow="Console", DockArea=BOTTOM, x=0, y=0, w=281, h=319, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Registers 1", DockArea=LEFT, x=0, y=2, w=969, h=292, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Source Files", DockArea=RIGHT, x=0, y=1, w=906, h=512, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Disassembly", DockArea=LEFT, x=0, y=1, w=969, h=222, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Global Data", DockArea=RIGHT, x=0, y=0, w=906, h=589, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=3, w=969, h=254, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=0, w=969, h=331, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=2, y=0, w=1251, h=319, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=BOTTOM, x=1, y=0, w=1120, h=319, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="2 s", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="893;0", DataGraphShowNamesAtCursor=0, PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="892;0", CodeGraphLegendShown=0, CodeGraphLegendPosition="908;0"
+OpenWindow="Console", DockArea=BOTTOM, x=0, y=0, w=187, h=319, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
 SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
 TableHeader="Global Data", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Scope"], ColWidths=[419;219;100;100;100;100]
 TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[816;100;100;100;254]
 TableHeader="Source Files", SortCol="File", SortOrder="DESCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[263;100;100;100;974]
 TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" gyro_data[1]";" gyro_data[2]";" gyro_data[0]"], ColWidths=[100;100;100;100;100]
-TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[254;100;154;144;134;154;110;144;683]
+TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[254;100;154;124;154;154;110;126;154]
 TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
-TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[100;105;294]
-TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[162;138;100;100]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[100;105;738]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[162;340;100;367]
 TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
 TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;340]
 WatchedExpression="gyro_data", RefreshRate=5, Window=Watched Data 1
 WatchedExpression="accel_data", RefreshRate=5, Window=Watched Data 1
 WatchedExpression="temperature_data", RefreshRate=5, Window=Watched Data 1
 WatchedExpression="htim8", RefreshRate=5, Window=Watched Data 1
-WatchedExpression="buf", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="tempPWM0", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="imu_temp_pid", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="tempPWM", RefreshRate=5, Window=Watched Data 1
