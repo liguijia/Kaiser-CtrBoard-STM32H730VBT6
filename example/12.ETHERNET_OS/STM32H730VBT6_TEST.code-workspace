@@ -4,6 +4,13 @@
             "path": "."
         }
     ],
-    "settings": {},
+    "settings": {
+        "files.associations": {
+            "*.C": "c",
+            "task.h": "c",
+            "lwip.h": "c",
+            "lwiperf.h": "c"
+        }
+    },
     "extensions": {}
 }

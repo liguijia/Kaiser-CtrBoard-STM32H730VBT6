@@ -16,7 +16,7 @@
   },
   "outDir": "build",
   "deviceName": null,
-  "packDir": null,
+  "packDir": ".pack/Keil/STM32H7xx_DFP.2.3.1",
   "miscInfo": {
     "uid": "cca2592be3aa299e031dd001f1e573d0"
   },
@@ -25,8 +25,8 @@
       "excludeList": [],
       "toolchain": "GCC",
       "compileConfig": {
-        "cpuType": "Cortex-M3",
-        "floatingPointHardware": "none",
+        "cpuType": "Cortex-M7",
+        "floatingPointHardware": "double",
         "scatterFilePath": "",
         "useCustomScatterFile": true,
         "storageLayout": {
@@ -73,15 +73,18 @@
           "Middlewares/Third_Party/LwIP/src/include/compat/posix/sys",
           "Middlewares/Third_Party/LwIP/src/include/compat/stdc",
           "Middlewares/Third_Party/LwIP/system/arch",
+          "Middlewares/Third_Party/FreeRTOS/Source/include",
+          "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+          "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
           "USER/Inc",
-          "USER/Src"
+          "USER/Src",
+          "USER/RTT"
         ],
         "libList": [],
         "defineList": [
           "DEBUG",
           "USE_HAL_DRIVER",
-          "STM32H730xx",
-          "LWIP_NOASSERT"
+          "STM32H730xx"
         ]
       },
       "builderOptions": {
@@ -198,7 +201,10 @@
           "Middlewares/Third_Party/LwIP/src/include/compat/posix/net",
           "Middlewares/Third_Party/LwIP/src/include/compat/posix/sys",
           "Middlewares/Third_Party/LwIP/src/include/compat/stdc",
-          "Middlewares/Third_Party/LwIP/system/arch"
+          "Middlewares/Third_Party/LwIP/system/arch",
+          "Middlewares/Third_Party/FreeRTOS/Source/include",
+          "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+          "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"
         ],
         "defineList": [
           "USE_HAL_DRIVER",

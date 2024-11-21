@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.C": "c",
+        "tcp.h": "c",
+        "opt.h": "c",
+        "main.h": "c"
+    }
+}
