@@ -1,0 +1,1529 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "d84de7cb-6604-4499-8b00-1ef471552770")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector:Screw_Terminal_01x01"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Screw_Terminal_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GNDREF"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDREF"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDREF_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDREF_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(polyline
+		(pts
+			(xy 86.868 164.592) (xy 88.9 164.592)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "0cdc78a4-5bcb-4e2c-9720-06c4f025184f")
+	)
+	(polyline
+		(pts
+			(xy 86.868 159.004) (xy 88.9 159.004)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "0f0e6485-d171-489d-9680-7d2c480faf3c")
+	)
+	(polyline
+		(pts
+			(xy 56.642 139.446) (xy 57.912 139.446)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "113a5da8-1c5a-4ca2-bc23-b5535da5f498")
+	)
+	(polyline
+		(pts
+			(xy 56.642 168.402) (xy 57.912 168.402)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "2ce33461-daf0-47c1-93fd-2b6ed4e01f9a")
+	)
+	(polyline
+		(pts
+			(xy 56.642 163.576) (xy 57.912 163.576)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "510c8d8b-c8cd-46e1-8efc-b5b5ba7e212c")
+	)
+	(polyline
+		(pts
+			(xy 86.868 169.418) (xy 88.9 169.418)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "699f56e1-42f2-4b54-b4b7-763e3262d946")
+	)
+	(polyline
+		(pts
+			(xy 55.626 144.272) (xy 57.912 144.272)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "7119ca21-1ca2-47a3-9144-10942ffb0022")
+	)
+	(polyline
+		(pts
+			(xy 29.972 150.876) (xy 29.972 155.194)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "8d45c360-a057-4111-98a4-363e0c97a2ae")
+	)
+	(polyline
+		(pts
+			(xy 29.972 143.764) (xy 32.512 143.764)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "b286a51a-bda1-4eb8-be92-b1753f6eced9")
+	)
+	(polyline
+		(pts
+			(xy 56.642 159.004) (xy 57.912 159.004)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "bc3ab832-b3de-46a5-a962-a47cdc585f01")
+	)
+	(polyline
+		(pts
+			(xy 84.836 154.178) (xy 88.9 154.178)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "bc408564-71cc-4c57-a309-bec0ea430f88")
+	)
+	(polyline
+		(pts
+			(xy 29.972 155.194) (xy 32.512 155.194)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "c00aa4b4-6585-4d3e-a6e6-0bbeb244622e")
+	)
+	(polyline
+		(pts
+			(xy 86.868 169.418) (xy 86.868 154.178)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "c091845e-b2c4-426b-8b51-305483eaf864")
+	)
+	(polyline
+		(pts
+			(xy 56.642 173.736) (xy 57.912 173.736)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "d1b290cc-0148-42a6-8b46-b1d8fabed602")
+	)
+	(polyline
+		(pts
+			(xy 29.972 147.574) (xy 29.972 143.764)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "db30d794-db2b-4dbc-b078-61836e38f46a")
+	)
+	(polyline
+		(pts
+			(xy 50.292 166.878) (xy 56.642 166.878)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "de2171e6-28e3-424a-9beb-09309d5715fb")
+	)
+	(polyline
+		(pts
+			(xy 56.642 173.736) (xy 56.642 154.178)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "df9d0614-499b-413f-bdcc-447677ac88a3")
+	)
+	(polyline
+		(pts
+			(xy 55.626 154.178) (xy 57.912 154.178)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "e09bbb8c-0984-4d11-9f22-e16fda46e0e0")
+	)
+	(polyline
+		(pts
+			(xy 56.642 144.272) (xy 56.642 139.7)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 0 255 0 1)
+		)
+		(uuid "eaa4e61e-5f1c-4765-8a50-a9186c37e960")
+	)
+	(rectangle
+		(start 17.78 130.81)
+		(end 113.792 176.784)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a649dd03-bdff-4354-9102-24ac4c7a2d3c)
+	)
+	(text_box "LAN(LAN8720A)"
+		(exclude_from_sim no)
+		(at 88.9 167.64 0)
+		(size 22.86 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "08dd7b00-b2c6-4714-9111-e2475d61230f")
+	)
+	(text_box "SERVO X7"
+		(exclude_from_sim no)
+		(at 57.912 137.668 0)
+		(size 15.494 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "108de734-516d-477f-9147-3c06772792af")
+	)
+	(text_box "XT30(VIN)"
+		(exclude_from_sim no)
+		(at 19.812 147.574 0)
+		(size 11.938 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "1144d1f6-b8a6-4357-9685-afbcea715df1")
+	)
+	(text_box "FLASH(W25Q128)"
+		(exclude_from_sim no)
+		(at 88.9 162.814 0)
+		(size 22.86 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "1d1d888f-bfab-44f9-aee3-78b33342e934")
+	)
+	(text_box "MCU(STM32H730VBT6)"
+		(exclude_from_sim no)
+		(at 88.9 152.654 0)
+		(size 22.86 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "36e5d447-9739-417f-b801-5c8006ac9b00")
+	)
+	(text_box "IMU(BMI088@ON_FPC)"
+		(exclude_from_sim no)
+		(at 88.9 157.48 0)
+		(size 22.86 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "3e44d50c-e5cf-4a51-a448-96fb9e026db3")
+	)
+	(text_box "DBUS\n"
+		(exclude_from_sim no)
+		(at 57.912 142.494 0)
+		(size 15.494 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "5d95795e-205f-42a7-abb6-8823a2ae199a")
+	)
+	(text_box "IMU_HEAT\n"
+		(exclude_from_sim no)
+		(at 57.912 157.226 0)
+		(size 10.16 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "6caa1e86-53e5-4540-be9f-2e9fd56b49e3")
+	)
+	(text_box "CAN(TJA1044) X3"
+		(exclude_from_sim no)
+		(at 57.912 166.624 0)
+		(size 18.796 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "a39d18c1-1a5f-4d53-9685-80b7d98ffc7a")
+	)
+	(text_box "BUZZER"
+		(exclude_from_sim no)
+		(at 57.912 161.798 0)
+		(size 10.16 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "b89592bb-ec94-4473-8bf4-d86cfb6eef7a")
+	)
+	(text_box "USART(4P GH1.25) X2"
+		(exclude_from_sim no)
+		(at 57.912 171.958 0)
+		(size 23.622 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "c3017197-18ee-4c82-b26d-9ff680ec828b")
+	)
+	(text_box "TPS560430 3.3V@600mA"
+		(exclude_from_sim no)
+		(at 57.912 152.654 0)
+		(size 26.924 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "c7511370-d81c-4e27-b205-4ddff7482455")
+	)
+	(text_box "MP2491C 5V@MAX6A"
+		(exclude_from_sim no)
+		(at 32.512 142.494 0)
+		(size 23.114 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "d54ef219-d327-4005-8185-337eb945bed3")
+	)
+	(text_box "MP2491C 5V@MAX6A"
+		(exclude_from_sim no)
+		(at 32.512 152.654 0)
+		(size 23.114 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "de774687-8659-45b7-a01a-841471ad9212")
+	)
+	(text_box "USB_TYPEC"
+		(exclude_from_sim no)
+		(at 37.592 165.354 0)
+		(size 12.7 3.302)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e782a493-a281-4f64-b5ed-fa069cc44e02")
+	)
+	(text "POWER TREE"
+		(exclude_from_sim no)
+		(at 65.278 134.874 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 3 3)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "26366521-fdd1-4604-a1b8-03671c99801e")
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 44.45 191.77 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28775559-cff3-4486-9772-e58d02e3ddbe")
+		(property "Reference" "#PWR025"
+			(at 44.45 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 44.45 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 44.45 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35da58db-5b35-4a00-be84-530837ff706c")
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x01")
+		(at 17.78 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6da3efa5-df04-4701-9403-b7e1f79d7226")
+		(property "Reference" "J1"
+			(at 20.32 185.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "M2"
+			(at 20.32 187.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 17.78 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 17.78 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 17.78 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "521ace06-90c4-4cf0-bd40-45d23b31a6be")
+		)
+		(instances
+			(project ""
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x01")
+		(at 44.45 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77136fb6-03a5-4feb-a33f-deded05f7a88")
+		(property "Reference" "J4"
+			(at 46.99 185.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "M2"
+			(at 46.99 187.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 44.45 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 44.45 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad0ad469-063c-492b-974c-5463c2c04fc3")
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 26.67 191.77 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "936be674-d112-4d2b-a9f6-b28aa646a73b")
+		(property "Reference" "#PWR023"
+			(at 26.67 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 26.67 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05206702-16f7-47f9-89c6-5adb2cf2125b")
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 17.78 191.77 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a92b60ec-ffbc-45a6-8b60-cd01e37011ca")
+		(property "Reference" "#PWR022"
+			(at 17.78 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 17.78 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 17.78 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 17.78 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 17.78 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eeade622-4fa5-4bdc-a825-85f5e2d8a0fa")
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x01")
+		(at 26.67 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bff3d0b3-895f-447e-bde7-67f1984f6960")
+		(property "Reference" "J2"
+			(at 29.21 185.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "M2"
+			(at 29.21 187.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 26.67 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 26.67 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58fba76b-1360-441b-a4f7-54979b2fbce7")
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 35.56 191.77 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db7cf86c-cf64-4d5d-a7cf-3cbed617bd66")
+		(property "Reference" "#PWR024"
+			(at 35.56 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 35.56 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 35.56 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "391222ad-eab0-4ea1-bf14-80af669d86fb")
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x01")
+		(at 35.56 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eeb98078-23fa-4a66-8d08-73a760e596af")
+		(property "Reference" "J3"
+			(at 38.1 185.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "M2"
+			(at 38.1 187.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 35.56 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 35.56 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bec9f8d-7fa3-414b-8fe7-3103f49a8a1e")
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 21.59 77.47)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "15c7587a-6e51-4394-8583-b1d2894100c1")
+		(property "Sheetname" "ETH"
+			(at 21.59 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ETH.kicad_sch"
+			(at 21.59 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 21.59 26.67)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6b4633e3-5d19-480c-a7bf-98053150c00e")
+		(property "Sheetname" "MCU_CORE"
+			(at 21.59 25.9584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU_CORE.kicad_sch"
+			(at 21.59 39.9546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 21.59 102.87)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "829e5d17-e17e-4e9a-bade-acbebd097ab6")
+		(property "Sheetname" "CAN"
+			(at 21.59 102.1584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CAN.kicad_sch"
+			(at 21.59 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 21.59 52.07)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "87f65b3e-98ba-4cc6-883e-89cf00e1d3e2")
+		(property "Sheetname" "POWER"
+			(at 21.59 51.3584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "POWER.kicad_sch"
+			(at 21.59 65.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "STM32H730"
+				(path "/d84de7cb-6604-4499-8b00-1ef471552770"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
