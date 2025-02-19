@@ -42,7 +42,7 @@
 *                                                                    *
 **********************************************************************
 *                                                                    *
-*       RTT version: 7.96m                                           *
+*       RTT version: 7.58c                                           *
 *                                                                    *
 **********************************************************************
 
@@ -424,9 +424,6 @@ int SEGGER_RTT_vprintf(unsigned BufferIndex, const char * sFormat, va_list * pPa
       case 's':
         {
           const char * s = va_arg(*pParamList, const char *);
-          if (s == NULL) {
-            s = "(NULL)";  // Print (NULL) instead of crashing or breaking, as it is more informative to the user.
-          }
           do {
             c = *s;
             s++;

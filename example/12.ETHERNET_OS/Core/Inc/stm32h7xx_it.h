@@ -57,8 +57,6 @@ void PendSV_Handler(void);
 void SysTick_Handler(void);
 void EXTI1_IRQHandler(void);
 void TIM6_DAC_IRQHandler(void);
-void ETH_IRQHandler(void);
-void ETH_WKUP_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */

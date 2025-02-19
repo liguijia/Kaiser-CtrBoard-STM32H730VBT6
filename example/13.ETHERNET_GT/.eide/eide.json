@@ -1,0 +1,205 @@
+{
+  "name": "13.ETHERNET_GT",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    "Core",
+    "LWIP",
+    "Middlewares",
+    "Drivers"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "79c709094f1de74e707e124dc7c4c72e"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M7",
+        "floatingPointHardware": "double",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "ST",
+          "cpuName": "STM32H730VB"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Core/Inc",
+          "LWIP/App",
+          "LWIP/Target",
+          "Middlewares/Third_Party/LwIP/src/include",
+          "Middlewares/Third_Party/LwIP/system",
+          "Drivers/STM32H7xx_HAL_Driver/Inc",
+          "Drivers/STM32H7xx_HAL_Driver/Inc/Legacy",
+          "Drivers/BSP/Components/lan8742",
+          "Middlewares/Third_Party/LwIP/src/include/netif/ppp",
+          "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
+          "Middlewares/Third_Party/LwIP/src/include/lwip",
+          "Middlewares/Third_Party/LwIP/src/include/lwip/apps",
+          "Middlewares/Third_Party/LwIP/src/include/lwip/priv",
+          "Middlewares/Third_Party/LwIP/src/include/lwip/prot",
+          "Middlewares/Third_Party/LwIP/src/include/netif",
+          "Middlewares/Third_Party/LwIP/src/include/compat/posix",
+          "Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa",
+          "Middlewares/Third_Party/LwIP/src/include/compat/posix/net",
+          "Middlewares/Third_Party/LwIP/src/include/compat/posix/sys",
+          "Middlewares/Third_Party/LwIP/src/include/compat/stdc",
+          "Middlewares/Third_Party/LwIP/system/arch",
+          "Drivers/CMSIS/Include"
+        ],
+        "libList": [],
+        "defineList": [
+          "DEBUG",
+          "USE_HAL_DRIVER",
+          "STM32H730xx"
+        ]
+      },
+      "builderOptions": {
+        "GCC": {
+          "version": 5,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "$float-abi-type": "hard",
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "optimization": "level-0",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true
+          },
+          "asm-compiler": {
+            "ASM_FLAGS": "-DDEBUG"
+          },
+          "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LD_FLAGS": "-TSTM32H730VBTX_FLASH.ld",
+            "$toolName": "auto"
+          }
+        }
+      }
+    },
+    "Release": {
+      "excludeList": [],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "builderOptions": {
+        "GCC": {
+          "version": 5,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "$float-abi-type": "softfp",
+            "output-debug-info": "enable",
+            "misc-control": []
+          },
+          "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true,
+            "C_FLAGS": "",
+            "CXX_FLAGS": ""
+          },
+          "asm-compiler": {
+            "ASM_FLAGS": ""
+          },
+          "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LD_FLAGS": "",
+            "LIB_FLAGS": ""
+          }
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Core/Inc",
+          "LWIP/App",
+          "LWIP/Target",
+          "Middlewares/Third_Party/LwIP/src/include",
+          "Middlewares/Third_Party/LwIP/system",
+          "Drivers/STM32H7xx_HAL_Driver/Inc",
+          "Drivers/STM32H7xx_HAL_Driver/Inc/Legacy",
+          "Drivers/BSP/Components/lan8742",
+          "Middlewares/Third_Party/LwIP/src/include/netif/ppp",
+          "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
+          "Middlewares/Third_Party/LwIP/src/include/lwip",
+          "Middlewares/Third_Party/LwIP/src/include/lwip/apps",
+          "Middlewares/Third_Party/LwIP/src/include/lwip/priv",
+          "Middlewares/Third_Party/LwIP/src/include/lwip/prot",
+          "Middlewares/Third_Party/LwIP/src/include/netif",
+          "Middlewares/Third_Party/LwIP/src/include/compat/posix",
+          "Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa",
+          "Middlewares/Third_Party/LwIP/src/include/compat/posix/net",
+          "Middlewares/Third_Party/LwIP/src/include/compat/posix/sys",
+          "Middlewares/Third_Party/LwIP/src/include/compat/stdc",
+          "Middlewares/Third_Party/LwIP/system/arch",
+          "Drivers/CMSIS/Include"
+        ],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32H730xx"
+        ],
+        "libList": []
+      }
+    }
+  },
+  "version": "3.5"
+}

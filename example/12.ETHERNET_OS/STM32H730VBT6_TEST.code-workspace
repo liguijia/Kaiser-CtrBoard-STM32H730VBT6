@@ -9,7 +9,12 @@
             "*.C": "c",
             "task.h": "c",
             "lwip.h": "c",
-            "lwiperf.h": "c"
+            "lwiperf.h": "c",
+            "segger_rtt_conf.h": "c",
+            "compare": "cpp",
+            "type_traits": "cpp",
+            "rtt_log.h": "c",
+            "udp.h": "c"
         }
     },
     "extensions": {}
